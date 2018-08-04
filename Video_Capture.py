@@ -5,8 +5,9 @@ cap = cv2.VideoCapture(0)
 #set the size of the window
 cap.set(3,620)
 cap.set(4,480)
-#write the video as the name:output.avi
+#write the video as the name:output.avi---based on python352
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
+#in python2,    fourcc = cv2.cv.FOURCC(*'XVID')   can be useful
 out = cv2.VideoWriter('output.avi',fourcc,20.0,(640,480))
 
 while(True):
