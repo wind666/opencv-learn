@@ -1,12 +1,8 @@
-# created by Huang Lu
-# 27/08/2016 17:24:55
-# Department of EE, Tsinghua Univ.
-
 import cv2
 import numpy as np
 
 cap = cv2.VideoCapture("/home/qt/Vision/output.avi")
-while(1):
+while True:
     # get a frame
     ret, frame = cap.read()
     # show a frame
