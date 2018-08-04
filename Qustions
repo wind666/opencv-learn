@@ -1,2 +1,11 @@
 Some Questions when I learn the opencv-python:
-1
+1.
+>>python3 left_mouse.py 
+  File "left_mouse.py", line 8
+    print events
+               ^
+SyntaxError: Missing parentheses in call to 'print'
+
+change to :
+print(events)
+The "print" is a function in python3.
